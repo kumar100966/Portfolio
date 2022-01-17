@@ -18,6 +18,7 @@ $gray-text: #2c2c2c;
 @import "nav-section"; 
 @import "intro-styles"; 
 @import "projects"; 
+@import "contact"; 
 
 @media screen and (max-width: 1450px){
     // Nav Section
@@ -80,6 +81,16 @@ $gray-text: #2c2c2c;
         height: 50vh;
     }
 
+}
+
+@media screen and (max-width: 711px){
+    footer{
+         padding: 2rem 5%; 
+        header{
+            text-align: center;
+            padding-bottom: 1rem; 
+        }
+    }
 }
 
 @media screen and (max-width: 678px){

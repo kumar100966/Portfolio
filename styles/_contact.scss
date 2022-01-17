@@ -1,0 +1,63 @@
+.form{
+    min-height: 90vh; 
+    @include flex(row, center, center); 
+}
+
+form{
+    @include flex(column, center, center); 
+    margin: 4rem 0; 
+    width: 50rem; 
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.205);
+    border-radius: 2rem;
+    padding: 2rem; 
+
+    label, input, textarea, button{
+        margin: 1rem; 
+    }
+
+    input, textarea, button{
+        padding: 1rem; 
+
+        &:focus{
+            outline: 1px solid black; 
+            outline-offset: 5px;
+        }
+    }
+
+    textarea{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    button{
+        background: $background-color; 
+        width: 100%; 
+        color: white; 
+        border-radius: 1rem;
+    }
+}
+
+
+footer{
+    @include flex(row, center, center); 
+    min-height: 10vh;
+    background: $background-color;
+    color: white; 
+    padding: 0 5%; 
+    flex-wrap: wrap; 
+
+    header{
+        font-size: 2rem; 
+        flex: 1 1 40rem; 
+    }
+
+    ul{
+        @include flex(row, space-around, center); 
+        flex: 1 1 40rem; 
+
+        a{
+            @include flex(row, center, center); 
+        }
+    }
+
+}

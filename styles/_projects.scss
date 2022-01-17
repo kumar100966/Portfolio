@@ -1,6 +1,6 @@
 .projects{
     min-height: 90vh; 
-    @include flex(row, space-around, center); 
+    @include flex(row, space-evenly, center); 
     flex-wrap: wrap; 
     header{
         padding: 2rem;
