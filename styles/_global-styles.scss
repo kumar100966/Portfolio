@@ -1,0 +1,55 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+h1{
+    font-size: $header-1; 
+}
+
+h2{
+    font-size: $header-2;
+}
+h3{
+    font-size: $header-3; 
+}
+h4{
+    font-size: $header-4;
+}
+h5{
+    font-size: $header-4;
+}
+
+li, 
+p,
+button, 
+a, 
+input,
+label{
+    font-size: $normal-text;
+}
+
+a{
+    text-decoration: none;
+    color: $gray-text;
+}
+
+
+ul{ 
+    list-style: none; 
+}
+
+button{
+    border: none; 
+}
+
+.active{
+    background: $background-color; 
+    border-radius: .8rem; 
+    color: white ; 
+}

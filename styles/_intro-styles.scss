@@ -1,0 +1,103 @@
+.intro{
+    padding: 0 0 0 5%; 
+    @include flex(row, center, stretch);
+    flex-wrap: wrap;  
+    min-height: 90vh; 
+}
+
+
+.intro-text-container{
+    flex: 1 1 auto;
+    @include flex(column, center, flex-start); 
+
+    header{
+        span{
+            font-size: 8rem; 
+            background: $gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-bottom: 2rem; 
+        }
+
+        h2{
+            padding: 1rem 0; 
+        }
+    }
+
+    p{
+        padding: 1rem 0; 
+    }
+
+}
+
+.intro-links-container{
+    img{
+        width: 4rem; 
+        margin: 2rem 0;
+
+        &:nth-child(1){
+            margin-right: 2rem; 
+        }
+    }
+}
+
+.intro-imgs-container{
+    svg{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+      flex: 0 1 70rem; 
+}
+
+.splash{
+    position: absolute; 
+    top: 0%; 
+    right: 0%; 
+    height: 100vh; 
+    z-index: -1; 
+}
+
+#plant-right{
+    animation: plant-right-animation 2s ease infinite alternate; 
+}
+
+#plant-left{
+    animation: plant-left-animation 2s ease infinite alternate 1s; 
+}
+#clock-arrow{
+    animation: clock-arrow-rotate 2s linear infinite; 
+    transform-box: fill-box; 
+    transform-origin: bottom; 
+}
+
+@keyframes plant-right-animation {
+    from{
+        transform: translateY(0%); 
+    }
+    to{
+        transform: translateY(-30%); 
+    }
+}
+
+@keyframes plant-left-animation {
+    from{
+        transform: translateY(0%); 
+    }
+    to{
+        transform: translateY(-30%); 
+    }
+}
+
+@keyframes clock-arrow-rotate {
+    from{
+        transform: rotate(0); 
+    }
+    to{
+        transform: rotate(360deg); 
+    }
+    
+}
+
+
