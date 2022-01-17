@@ -1,7 +1,7 @@
 nav{
-    width: 60%; 
-    min-height: 10vh; 
-    padding: 0rem 0 0rem 5%; 
+    width: 65%; 
+    min-height: 10vh;
+    padding: 0 0 0 5%; 
     @include flex(row, space-between, center); 
     flex-wrap: wrap ; 
 }
@@ -11,18 +11,20 @@ nav{
     flex: 1 1 30rem; 
 
     h1{
-        padding: 2rem; 
+        padding: 1rem; 
     }
 }
 
 ul{
-    flex: 1 1 30rem; 
+    flex: 1 1 40rem; 
     @include flex(row, space-around, center); 
 
     li{
         flex: 1 1 5rem; 
+        text-align: center;
         a{
-            padding:2rem; 
+            display: inline-block; 
+            padding:1rem; 
         }
     }
 }

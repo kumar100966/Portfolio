@@ -9,6 +9,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
   font-size: 2.6rem;
 }
@@ -58,9 +62,9 @@ button {
 }
 
 nav {
-  width: 60%;
+  width: 65%;
   min-height: 10vh;
-  padding: 0rem 0 0rem 5%;
+  padding: 0 0 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,13 +102,13 @@ nav {
 }
 
 .logo-container h1 {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 ul {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 30rem;
-          flex: 1 1 30rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,14 +127,16 @@ ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 5rem;
           flex: 1 1 5rem;
+  text-align: center;
 }
 
 ul li a {
-  padding: 2rem;
+  display: inline-block;
+  padding: 1rem;
 }
 
 .intro {
-  padding: 0 0 0 5%;
+  padding: 0 2% 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,9 +147,9 @@ ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 90vh;
@@ -151,8 +157,8 @@ ul li a {
 
 .intro-text-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +172,7 @@ ul li a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-right: 5rem;
 }
 
 .intro-text-container header span {
@@ -186,19 +193,32 @@ ul li a {
   padding: 1rem 0;
 }
 
-.intro-links-container img {
-  width: 4rem;
-  margin: 2rem 0;
+.intro-links-container {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
 }
 
-.intro-links-container img:nth-child(1) {
-  margin-right: 2rem;
+.intro-links-container img {
+  width: 4rem;
 }
 
 .intro-imgs-container {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 70rem;
-          flex: 0 1 70rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
 }
 
 .intro-imgs-container svg {
@@ -297,6 +317,81 @@ ul li a {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  nav {
+    width: 100%;
+    padding-right: 5%;
+  }
+  .splash {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  html {
+    font-size: 50%;
+  }
+  .intro-text-container {
+    -ms-flex-preferred-size: 47rem;
+        flex-basis: 47rem;
+  }
+  .intro-imgs-container {
+    -ms-flex-preferred-size: 47rem;
+        flex-basis: 47rem;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .intro {
+    padding: 0;
+  }
+  .intro-text-container {
+    padding: 4rem 1rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-text-container header span {
+    display: block;
+    font-size: 7rem;
+  }
+  .intro-links-container {
+    width: 25%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .intro-imgs-container {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  nav {
+    padding: 0 0;
+  }
+  nav ul {
+    -ms-flex-preferred-size: 47.375rem;
+        flex-basis: 47.375rem;
+  }
+  .logo-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 37.375rem;
+        flex-basis: 37.375rem;
+  }
+  .logo-container h1 {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 74.75rem;
+            flex: 1 1 74.75rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

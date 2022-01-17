@@ -18,3 +18,91 @@ $gray-text: #2c2c2c;
 @import "nav-section"; 
 @import "intro-styles"; 
 
+@media screen and (max-width: 1450px){
+    // Nav Section
+
+    nav{
+        width: 100%; 
+        padding-right: 5%; 
+    }
+
+    // Intro Section
+
+    .splash{
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 945px){
+
+    html{
+        font-size: 50%; 
+    }
+
+    .intro-text-container{
+        flex-basis: 47rem; 
+    }
+
+    .intro-imgs-container{
+        flex-basis: 47rem; 
+    }
+    
+}
+
+@media screen and (max-width: 809px){
+
+    
+    // Intro Section
+
+    .intro{
+        padding: 0; 
+    }
+
+    .intro-text-container{
+        padding: 4rem 1rem; 
+        text-align: center; 
+        align-items: center;
+        header{
+            span{
+                display: block;
+                font-size: 7rem; 
+            }
+        }
+    }
+
+    .intro-links-container{
+        width: 25%; 
+        justify-content: space-around;
+    }   
+
+    .intro-imgs-container{
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width: 678px){
+     // Nav Section
+
+     nav{
+        padding: 0 0; 
+
+        ul{
+           flex-basis: 47.375rem; 
+        }
+    }
+
+    .logo-container{
+        flex-wrap: wrap; 
+       padding: 2rem; 
+       justify-content: center;
+       flex-basis: 37.375rem; 
+       h1{
+           text-align: center;
+           flex: 1 1 74.75rem; 
+       }
+    }
+
+}
+
+

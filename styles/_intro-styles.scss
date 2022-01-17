@@ -1,15 +1,15 @@
 .intro{
-    padding: 0 0 0 5%; 
-    @include flex(row, center, stretch);
+    padding: 0 2% 0 5%; 
+    @include flex(row, center, center);
     flex-wrap: wrap;  
     min-height: 90vh; 
 }
 
 
 .intro-text-container{
-    flex: 1 1 auto;
+    flex: 1 1 35rem;
     @include flex(column, center, flex-start); 
-
+    padding-right: 5rem; 
     header{
         span{
             font-size: 8rem; 
@@ -32,13 +32,11 @@
 }
 
 .intro-links-container{
+    padding: 2rem 0; 
+        @include flex(row, space-between, center); 
+        width: 10rem; 
     img{
-        width: 4rem; 
-        margin: 2rem 0;
-
-        &:nth-child(1){
-            margin-right: 2rem; 
-        }
+        width: 4rem;
     }
 }
 
@@ -48,8 +46,11 @@
         width: 100%;
         object-fit: cover;
     }
-      flex: 0 1 70rem; 
+    flex: 1 1 35rem; 
 }
+
+      
+
 
 .splash{
     position: absolute; 
