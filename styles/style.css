@@ -564,6 +564,7 @@ footer ul a {
   }
   .intro-imgs-container {
     height: 50vh;
+    padding: 1rem;
   }
 }
 
